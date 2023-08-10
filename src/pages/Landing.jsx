@@ -9,6 +9,9 @@ import {
 } from "react-icons/md";
 import one from "../assets/one.svg";
 import two from "../assets/two.svg";
+import randy from "../assets/randy.svg";
+import { AiFillStar } from "react-icons/ai";
+import quote from "../assets/quote.svg";
 
 const Landing = () => {
   return (
@@ -235,6 +238,8 @@ const Landing = () => {
         </div>
       </div>
 
+      <div className=" h-1 bg-gray-100 my-12"></div>
+
       <div className="min-h-[80vh] w-full  px-4  sm:px-6 lg:px-8">
         <div className="container max-w-[86rem] mx-auto">
           <div className="flex p-12 py-24  md:flex-row flex-col space-x-8 justify-center items-center">
@@ -264,9 +269,11 @@ const Landing = () => {
         </div>
       </div>
 
+      <div className=" h-1 bg-gray-100 my-12"></div>
+
       <div className="min-h-[100vh] w-full  px-4  sm:px-6 lg:px-8">
         <div className="container max-w-[86rem] mx-auto">
-          <div className="flex p-12 py-24  md:flex-row flex-col justify-center items-center">
+          <div className="flex p-12 py-24  md:flex-row flex-col justify-between items-center">
             <div className="w-[35%] flex flex-col">
               <h1 className="text-[#164371] font-extrabold font-sans text-[1.5rem]">
                 Don't Listen to Us -
@@ -274,22 +281,104 @@ const Landing = () => {
               <h2 className=" font-semibold text-[2rem] mt-4 leading-[125%] w-[80%]">
                 Here are some words from people like you!
               </h2>
-              <div className="flex flex-col">
-                <div>
-                    <img src="" alt="" />
-                    <div>
-                        <h1></h1>
-                        <div>
+              <div className="flex flex-col space-y-8 z-0 mt-10 w-full">
+                <div className="flex p-6 border-4 border-black bg-white rounded-lg relative">
+                  <span className="w-12 h-12 bg-[#8E1D1D] rounded-full absolute -left-6 top-10 z-[-1]"></span>
 
-                        </div>
+                  <div className="flex z-0 relative w-full">
+                    <img className="w-[30%] h-20" src={randy} alt="" />
+                    <div className="flex flex-col w-[40%]">
+                      <h1 className="font-sans font-bold text-[1.25rem]">
+                        Randy Randy
+                      </h1>
+                      <div className="flex mt-1">
+                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                      </div>
                     </div>
+                  </div>
+                </div>
+                <div className="flex p-6 border-4 border-black bg-white rounded-lg relative">
+                  <span className="w-12 h-12 bg-[#8E1D1D] rounded-full absolute -left-6 top-10 z-[-1]"></span>
+
+                  <div className="flex z-0 relative w-full">
+                    <img className="w-[30%] h-20" src={randy} alt="" />
+                    <div className="flex flex-col w-[40%]">
+                      <h1 className="font-sans font-bold text-[1.25rem]">
+                        Randy Randy
+                      </h1>
+                      <div className="flex mt-1">
+                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex p-6 border-4 shado border-black bg-white rounded-lg relative">
+                  <span className="w-12 h-12 bg-[#8E1D1D] rounded-full absolute -left-6 top-10 z-[-1]"></span>
+
+                  <div className="flex z-0 relative w-full">
+                    <img className="w-[30%] h-20" src={randy} alt="" />
+                    <div className="flex flex-col w-[40%]">
+                      <h1 className="font-sans font-bold text-[1.25rem]">
+                        Randy Randy
+                      </h1>
+                      <div className="flex mt-1">
+                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="w-[65%]"></div>
+            <div className="card1 relative p-8 aspect-square w-full md:w-[50%] scale-[.75] shadow-dark rounded-lg">
+              <div className="flex flex-col items-center">
+                <img
+                  className="w-36 h-36 absolute -top-16 border-[8px] border-black rounded-full"
+                  src={randy}
+                  alt=""
+                />
+                <div className="flex flex-col">
+                  <h1 className="font-bold font-sans text-[1.75rem] mt-24">
+                    Randy Randy
+                  </h1>
+                  <div className="flex mt-1">
+                    <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                    <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                    <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                    <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                    <AiFillStar className="text-[#FFD700] w-8 h-8" />
+                  </div>
+                </div>
+                <div className="flex flex-col px-2 ">
+                  <img className="mt-12 w-16 h-16" src={quote} alt="" />
+                  <p className="text-center text-[2rem] mt-12  font-semibold">
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    Lorem ipsum
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <div className="w-[80%] h-4 mx-auto my-32"></div>
+
+      <footer className="min-h-[90vh]  bg-[#000] w-full  px-4  sm:px-6 lg:px-8">
+        <div className="container max-w-[86rem] mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-center"></div>
+        </div>
+      </footer>
     </>
   );
 };
