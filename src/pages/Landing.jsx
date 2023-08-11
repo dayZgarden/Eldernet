@@ -1,41 +1,24 @@
 import React from "react";
 import hero from "../assets/hero.svg";
-import { BsHeartPulseFill } from "react-icons/bs";
-import arrow from "../assets/arrow.svg";
-import {
-  MdOutlineReceiptLong,
-  MdOutlineRateReview,
-  MdMilitaryTech,
-} from "react-icons/md";
+
 import one from "../assets/one.svg";
 import two from "../assets/two.svg";
 import randy from "../assets/randy.svg";
 import { AiFillStar } from "react-icons/ai";
 import quote from "../assets/quote.svg";
+import { useState, useEffect } from "react";
+
+import phone from "../assets/phone.svg";
+import ServicesCmp from "../components/Services.cmp";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 const Landing = () => {
   return (
     <>
       <div className="w-full">
-        <nav className="max-h-[10vh]  px-4  sm:px-6 lg:px-8 w-full font-sans">
-          <div className="container max-w-[86rem] mx-auto">
-            <div className="flex p-12 mx-auto justify-between items-center max-h-[10vh]">
-              <h1 className="font-extrabold text-[1.5rem] tracking-wider">
-                ELDERNET
-              </h1>
-              <ul className="w-[40%]  flex justify-between font-bold">
-                <a className="text-[#8E1D1D] " href="">
-                  Home
-                </a>
-                <a href="">Contact</a>
-                <a href="">About Us</a>
-                <a href="">Services</a>
-                <a href="">FAQs</a>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <div className="w-full  px-4  sm:px-6 lg:px-8 h-[90vh] text-white bg-[#164371]">
+        <Nav />
+        <div className="w-full  px-4  sm:px-6 lg:px-8 h-[90vh] text-white bg-[#151414]">
           <div className="container max-w-[86rem] mx-auto">
             <div className="flex p-12 py-24 justify-center items-center">
               <div className="w-[50%] flex flex-col">
@@ -71,144 +54,26 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="min-h-[80vh] w-full  px-4  sm:px-6 lg:px-8">
-        <div className="container max-w-[86rem] mx-auto">
-          <div className="flex p-12 pt-24 flex-col justify-center items-center">
-            <h1 className="text-[#8E1D1D] font-extrabold font-sans text-[1.5rem]">
-              What do we offer?
-            </h1>
-            <h2 className="font-extrabold text-[2.5rem] leading-[125%] mt-4 w-[50%] text-center">
-              A Toolkit to Enhance You Retirement Efficieny & Lifestyle
-            </h2>
-            <div className="flex flex-col md:flex-row md:flex-wrap w-full scale-75 translate-y-[-10%]">
-              <div className="card1 p-8 aspect-square w-full md:w-[50%] scale-[.8] shadow-light rounded-lg">
-                <div className="flex flex-col ">
-                  <div className="flex bg-[#D8B2b2] items-center p-8 rounded-lg justify-between">
-                    <BsHeartPulseFill className="w-[40%] h-20" />
-                    <div className="flex flex-col">
-                      <h1 className="font-bold font-sans text-[1.75rem]">
-                        FEGLI (Life Insurance)
-                      </h1>
-                      <h2 className="text-[1.25rem] font-semibold">
-                        FEGLI changes dramatically as you move through your
-                        career.
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="flex flex-col px-2 ">
-                    <div className="w-6 h-1 bg-black mt-12"></div>
-                    <p className="mt-8 text-[1.5rem] font-semibold">
-                      FEGLI changes dramatically as you move through your
-                      career. Its important you keep up with these changes and
-                      make informed decisions that are best for you and your
-                      family.
-                    </p>
-                    <div className="flex space-x-4 items-center absolute bottom-12">
-                      <h1 className="text-[2rem] font-sans font-bold ">
-                        Explore FEGLI help
-                      </h1>
-                      <img className="scale-90" src={arrow} alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card1 p-8 aspect-square w-full md:w-[50%] scale-[.8] shadow-light rounded-lg">
-                <div className="flex flex-col ">
-                  <div className="flex bg-[#b2c2da] items-center p-8 rounded-lg justify-between">
-                    <MdOutlineReceiptLong className="w-[40%] h-20" />
-                    <div className="flex flex-col">
-                      <h1 className="font-bold font-sans text-[1.75rem]">
-                        Codes on your paycheck
-                      </h1>
-                      <h2 className="text-[1.25rem] font-semibold">
-                        We run into federal employees all the time who are
-                        paying for benefits they don’t need
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="flex flex-col px-2 ">
-                    <div className="w-6 h-1 bg-black mt-12"></div>
-                    <p className="mt-8 text-[1.5rem] font-semibold">
-                      It is important to keep up to date on what benefits you
-                      have and what you are paying for them. As you age, some of
-                      these benefits change and need to be reviewed annually.
-                    </p>
-                    <div className="flex space-x-4 items-center absolute bottom-12">
-                      <h1 className="text-[2rem] font-sans font-bold ">
-                        Explore paycheck codes
-                      </h1>
-                      <img className="scale-90" src={arrow} alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card1 p-8 aspect-square w-full md:w-[50%] scale-[.8] shadow-light rounded-lg">
-                <div className="flex flex-col ">
-                  <div className="flex bg-[#bcd4eb] items-center p-8 rounded-lg justify-between">
-                    <MdMilitaryTech className="w-[40%] h-20" />
-                    <div className="flex flex-col">
-                      <h1 className="font-bold font-sans text-[1.75rem]">
-                        Military Time Buyback
-                      </h1>
-                      <h2 className="text-[1.25rem] font-semibold">
-                        Numerous workers in the force have a history of military
-                        service.
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="flex flex-col px-2 ">
-                    <div className="w-6 h-1 bg-black mt-12"></div>
-                    <p className="mt-8 text-[1.5rem] font-semibold">
-                      A little-known fact: Veterans are frequently eligible to
-                      buy back military service time, maximizing their monthly
-                      retirement in the process.
-                    </p>
-                    <div className="flex space-x-4 items-center absolute bottom-12">
-                      <h1 className="text-[2rem] font-sans font-bold ">
-                        Explore military buyback
-                      </h1>
-                      <img className="scale-90" src={arrow} alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card1 p-8 aspect-square w-full md:w-[50%] scale-[.8] shadow-light rounded-lg">
-                <div className="flex flex-col ">
-                  <div className="flex bg-[#a3aacc] items-center p-8 rounded-lg justify-between">
-                    <MdOutlineRateReview className="w-[40%] h-20" />
-                    <div className="flex flex-col">
-                      <h1 className="font-bold font-sans text-[1.75rem]">
-                        Free Benefit Review
-                      </h1>
-                      <h2 className="text-[1.25rem] font-semibold">
-                        If you aren’t sure about when or if you should retire we
-                        can help
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="flex flex-col px-2 ">
-                    <div className="w-6 h-1 bg-black mt-12"></div>
-                    <p className="mt-8 text-[1.5rem] font-semibold">
-                      We offer a free retirement review for all postal and
-                      federal employees. Our reviews are typically conducted
-                      over the phone and can take less than an hour to review
-                      all aspects.
-                    </p>
-                    <div className="flex space-x-4 items-center absolute bottom-12">
-                      <h1 className="text-[2rem] font-sans font-bold ">
-                        Explore benefit review
-                      </h1>
-                      <img className="scale-90" src={arrow} alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <ServicesCmp />
+
+
+      <div className="bg-[#151414] w-[80vw] translate-y-[-100%] h-[20vh] p-8 rounded-r-full">
+        <div className="flex justify-between items-center h-full">
+          <div className="w-[30%]"></div>
+          <div className="w-[30%]">
+            <h1 className="text-white text-[2.5rem] font-sans font-bold">Call Us Today!</h1>
+          </div>
+          <div className="bg-white w-[30%] scale-90 rounded-full flex space-x-4">
+            <img src={phone} alt="" />
+            <div className="flex flex-col items-center justify-center text-[1.75rem] font-sans font-bold">
+              <h1>
+              111-102-8000
+              </h1>
+              <h1>7 days a week</h1>
             </div>
           </div>
         </div>
       </div>
-
-      <div className="bg-[#A3AACC] w-[80vw] translate-y-[-100%] h-[20vh] p-8 rounded-r-full"></div>
 
       <div className="min-h-[80vh] w-full  px-4  sm:px-6 lg:px-8">
         <div className="container max-w-[86rem] mx-auto">
@@ -238,7 +103,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className=" h-1 bg-gray-100 my-12"></div>
+      <div className=" h-[1px] bg-gray-100 my-12"></div>
 
       <div className="min-h-[80vh] w-full  px-4  sm:px-6 lg:px-8">
         <div className="container max-w-[86rem] mx-auto">
@@ -261,7 +126,7 @@ const Landing = () => {
                 depend on a variety of criteria that vary from one employee to
                 the next.
               </p>
-              <button className="bg-[#164371] mt-8 text-white w-[30%] py-4 text-[1.25rem] font-bold">
+              <button className="bg-[#151414] mt-8 text-white w-[30%] py-4 text-[1.25rem] font-bold">
                 Learn More
               </button>
             </div>
@@ -269,7 +134,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className=" h-1 bg-gray-100 my-12"></div>
+      <div className=" h-[1px] bg-gray-100 my-12"></div>
 
       <div className="min-h-[100vh] w-full  px-4  sm:px-6 lg:px-8">
         <div className="container max-w-[86rem] mx-auto">
@@ -374,11 +239,8 @@ const Landing = () => {
 
       <div className="w-[80%] h-4 mx-auto my-32"></div>
 
-      <footer className="min-h-[90vh]  bg-[#000] w-full  px-4  sm:px-6 lg:px-8">
-        <div className="container max-w-[86rem] mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center"></div>
-        </div>
-      </footer>
+      <Footer />
+     
     </>
   );
 };
