@@ -3,15 +3,13 @@ import hero from "../assets/hero.svg";
 
 import one from "../assets/one.svg";
 import two from "../assets/two.svg";
-import randy from "../assets/randy.svg";
-import { AiFillStar } from "react-icons/ai";
-import quote from "../assets/quote.svg";
 import { useState, useEffect } from "react";
 
 import phone from "../assets/phone.svg";
 import ServicesCmp from "../components/Services.cmp";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import Reviews from "../components/Reviews";
 
 const Landing = () => {
   return (
@@ -31,7 +29,7 @@ const Landing = () => {
                   you only get to retire once
                 </h2>
                 <div className="mt-6 w-[30%] items-center flex flex-col">
-                  <button className="bg-[#8E1D1D] w-full py-4 text-[1.25rem] font-bold">
+                  <button className="bg-[#8E1D1D] hover:tracking-widest hover:w-[95%] transition-all duration-300 w-full py-4 text-[1.25rem] font-bold">
                     Get Started
                   </button>
                   <span className="h-[3rem] mt-6  w-2 rounded-lg bg-[#79A7D6]"></span>
@@ -57,15 +55,15 @@ const Landing = () => {
       <ServicesCmp />
 
 
-      <div className="bg-[#151414] w-[80vw] translate-y-[-100%] h-[20vh] p-8 rounded-r-full">
+      <div className="bg-[#151414] group w-[80vw] translate-y-[-100%] h-[20vh] p-8 rounded-r-full">
         <div className="flex justify-between items-center h-full">
           <div className="w-[30%]"></div>
           <div className="w-[30%]">
             <h1 className="text-white text-[2.5rem] font-sans font-bold">Call Us Today!</h1>
           </div>
-          <div className="bg-white w-[30%] scale-90 rounded-full flex space-x-4">
-            <img src={phone} alt="" />
-            <div className="flex flex-col items-center justify-center text-[1.75rem] font-sans font-bold">
+          <div className="bg-white hover:cursor-pointer w-[30%] scale-90 rounded-full flex space-x-4">
+            <img className=" group-hover:animate-rotate transition-all duration-300" src={phone} alt="" />
+            <div className="flex flex-col items-center leading-none justify-center text-[2rem] font-sans font-bold">
               <h1>
               111-102-8000
               </h1>
@@ -74,6 +72,8 @@ const Landing = () => {
           </div>
         </div>
       </div>
+
+      
 
       <div className="min-h-[80vh] w-full  px-4  sm:px-6 lg:px-8">
         <div className="container max-w-[86rem] mx-auto">
@@ -92,7 +92,7 @@ const Landing = () => {
                 forced to return back to work after underestimating your
                 retirement income!
               </p>
-              <button className="bg-[#8E1D1D] mt-8 text-white w-[30%] py-4 text-[1.25rem] font-bold">
+              <button className="bg-[#8E1D1D] hover:tracking-widest hover:w-[25%] transition-all duration-300 mt-8 text-white w-[30%] py-4 text-[1.25rem] font-bold">
                 Learn More
               </button>
             </div>
@@ -126,7 +126,7 @@ const Landing = () => {
                 depend on a variety of criteria that vary from one employee to
                 the next.
               </p>
-              <button className="bg-[#151414] mt-8 text-white w-[30%] py-4 text-[1.25rem] font-bold">
+              <button className="bg-[#151414] hover:tracking-widest hover:w-[26%] transition-all duration-300] mt-8 text-white w-[30%] py-4 text-[1.25rem] font-bold">
                 Learn More
               </button>
             </div>
@@ -136,106 +136,7 @@ const Landing = () => {
 
       <div className=" h-[1px] bg-gray-100 my-12"></div>
 
-      <div className="min-h-[100vh] w-full  px-4  sm:px-6 lg:px-8">
-        <div className="container max-w-[86rem] mx-auto">
-          <div className="flex p-12 py-24  md:flex-row flex-col justify-between items-center">
-            <div className="w-[35%] flex flex-col">
-              <h1 className="text-[#164371] font-extrabold font-sans text-[1.5rem]">
-                Don't Listen to Us -
-              </h1>
-              <h2 className=" font-semibold text-[2rem] mt-4 leading-[125%] w-[80%]">
-                Here are some words from people like you!
-              </h2>
-              <div className="flex flex-col space-y-8 z-0 mt-10 w-full">
-                <div className="flex p-6 border-4 border-black bg-white rounded-lg relative">
-                  <span className="w-12 h-12 bg-[#8E1D1D] rounded-full absolute -left-6 top-10 z-[-1]"></span>
-
-                  <div className="flex z-0 relative w-full">
-                    <img className="w-[30%] h-20" src={randy} alt="" />
-                    <div className="flex flex-col w-[40%]">
-                      <h1 className="font-sans font-bold text-[1.25rem]">
-                        Randy Randy
-                      </h1>
-                      <div className="flex mt-1">
-                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex p-6 border-4 border-black bg-white rounded-lg relative">
-                  <span className="w-12 h-12 bg-[#8E1D1D] rounded-full absolute -left-6 top-10 z-[-1]"></span>
-
-                  <div className="flex z-0 relative w-full">
-                    <img className="w-[30%] h-20" src={randy} alt="" />
-                    <div className="flex flex-col w-[40%]">
-                      <h1 className="font-sans font-bold text-[1.25rem]">
-                        Randy Randy
-                      </h1>
-                      <div className="flex mt-1">
-                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex p-6 border-4 shado border-black bg-white rounded-lg relative">
-                  <span className="w-12 h-12 bg-[#8E1D1D] rounded-full absolute -left-6 top-10 z-[-1]"></span>
-
-                  <div className="flex z-0 relative w-full">
-                    <img className="w-[30%] h-20" src={randy} alt="" />
-                    <div className="flex flex-col w-[40%]">
-                      <h1 className="font-sans font-bold text-[1.25rem]">
-                        Randy Randy
-                      </h1>
-                      <div className="flex mt-1">
-                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                        <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card1 relative p-8 aspect-square w-full md:w-[50%] scale-[.75] shadow-dark rounded-lg">
-              <div className="flex flex-col items-center">
-                <img
-                  className="w-36 h-36 absolute -top-16 border-[8px] border-black rounded-full"
-                  src={randy}
-                  alt=""
-                />
-                <div className="flex flex-col">
-                  <h1 className="font-bold font-sans text-[1.75rem] mt-24">
-                    Randy Randy
-                  </h1>
-                  <div className="flex mt-1">
-                    <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                    <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                    <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                    <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                    <AiFillStar className="text-[#FFD700] w-8 h-8" />
-                  </div>
-                </div>
-                <div className="flex flex-col px-2 ">
-                  <img className="mt-12 w-16 h-16" src={quote} alt="" />
-                  <p className="text-center text-[2rem] mt-12  font-semibold">
-                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                    Lorem ipsum
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Reviews />
 
       <div className="w-[80%] h-4 mx-auto my-32"></div>
 
