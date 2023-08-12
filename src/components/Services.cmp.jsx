@@ -12,7 +12,7 @@ const ServicesCmp = () => {
     <>
       <div className="min-h-[80vh] w-full  px-4  sm:px-6 lg:px-8">
         <div className="container max-w-[86rem] mx-auto">
-          <div className="flex p-12 pt-24 flex-col justify-center items-center">
+          <div className="flex pt-24 flex-col justify-center items-center">
             <h1 className="text-[#8E1D1D] font-extrabold font-sans text-[1.5rem]">
               What do we offer?
             </h1>
