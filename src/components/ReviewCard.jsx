@@ -26,7 +26,7 @@ const ReviewCard = ({ setReview, currentReview, data }) => {
           </div>
           <div className="w-[20%] flex items-center justify-between">
             <div className="h-full w-1 bg-black"></div>
-                <h1 className=" font-bold text-[2rem] font-sans text-[#8E1D1D]">{data.age}</h1>
+                <h1 className=" font-bold text-[2rem] font-sans text-[#000000]">{data.age}</h1>
           </div>
         </div>
       </div>

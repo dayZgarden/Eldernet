@@ -1,10 +1,11 @@
 import React from "react";
-
+import '../styles/triangle.css'
+import hero from '../assets/hero.png'
 
 const Hero = () => {
   return (
     <>
-      <div className="w-full  px-4  sm:px-6 lg:px-8 h-[90vh] text-white bg-[#151414]">
+      <div className="w-full  px-4 relative sm:px-6 lg:px-8 h-[90vh] text-white bg-[#151414]">
         <div className="container max-w-[86rem] mx-auto">
           <div className="flex p-12 py-24 justify-center items-center">
             <div className="w-[50%] flex flex-col">
@@ -20,23 +21,25 @@ const Hero = () => {
                 <button className="bg-[#8E1D1D] hover:tracking-wide hover:w-[110%] transition-all duration-300 w-full py-4 text-[1.25rem] font-bold">
                   Get Started
                 </button>
-                <span className="h-[3rem] mt-6  w-2 rounded-lg bg-[#79A7D6]"></span>
+                <span className="h-[3rem] mt-6  w-2  bg-[#79A7D6]"></span>
               </div>
               <div className="flex mt-6 items-center space-x-4">
                 <h3 className="font-bold text-[1.25rem]">Call us anytime!</h3>
-                <span className="h-[3rem] w-2 rounded-lg bg-[#79A7D6]"></span>
+                <span className="h-[3rem] w-2  bg-[#79A7D6]"></span>
                 <h3 className="font-bold text-[1.25rem]">1-800-555-5555</h3>
               </div>
             </div>
             <div className="w-[50%] flex items-center  justify-center">
               <img
-                className="scale-[.8] rotate-2 translate-y-[-3%]"
-                src=""
+                className=" z-[1] rotate-[-8deg] scale-[130%]"
+                src={hero}
                 alt=""
               />
             </div>
           </div>
         </div>
+        <div className="absolute bottom-0 right-[10%] w-[35vw] aspect-square rounded-full bg-[#151414] blur-2xl opacity-50 brightness-200"></div>
+        <div className="triangle"></div>
       </div>
     </>
   );
